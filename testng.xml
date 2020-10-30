@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+    <listeners>
+        <listener class-name="com.edu.tm4j_testng_integration.listeners.ConnectorListener"/>
+        <listener class-name="com.edu.tm4j_testng_integration.listeners.IntegrationListener"/>
+    </listeners>
+    <test thread-count="1" name="DummyTest">
+        <classes>
+            <class name="com.edu.tm4j_testng_integration.LoginTest"/>
+            <class name="com.edu.tm4j_testng_integration.StatusChangeTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
